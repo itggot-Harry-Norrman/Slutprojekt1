@@ -31,7 +31,7 @@
   .overlay {
     width: 100vw;
     height: 100vh;
-    z-index: 9998;
+    z-index: 9994;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -70,6 +70,12 @@
     z-index: 9999;
     position: fixed;
     bottom: calc(45vh);
+    animation-name: ach_ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
   }
   .button {
     background-color: rgba(0,137,142, 0.5);
@@ -81,6 +87,7 @@
     justify-content: center;
     align-self: flex-end;
     margin: 5px;
+    margin-top: 10px;
   }
   .button:active {
     background-color: rgba(0,137,142, 1);
@@ -95,6 +102,158 @@
   }
   input {
     background-color: rgba(255,255,255,0.2);
+    font-size: 1em;
+    color: rgba(255,255,255,0.8);
+    height: 25px;
     border: none;
+    padding: 2px;
+  }
+  input:focus {
+    outline: none;
+  }
+  .display_n {
+    display: none;
+  }
+  .res_js {
+    z-index: 9998;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .menu {
+    position: fixed;
+    z-index: 9999;
+    left: -280px;
+    top: 0px;
+    background-color: #161616;
+    -webkit-box-shadow: 0px 5px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 15px 3px rgba(0,0,0,0.75);
+    height: 100vh;
+    transition: 0.5s;
+    animation-name: men_ani_rev;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .men_header {
+    height: 180px;
+    width: 280px;
+    background-color: rgba(0, 137, 142, 0.3);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.3);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.3);
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .men_header h3 {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-left: 20px;
+    line-height: 0;
+  }
+  .men_header h4 {
+    font-size: 1em;
+    font-weight: lighter;
+    margin-left: 20px;
+    line-height: 0;
+  }
+  .list_itm {
+    -webkit-box-shadow: 0px 10px 0px -9px rgba(255,255,255,0.3);
+    -moz-box-shadow: 0px 10px 0px -9px rgba(255,255,255,0.3);
+    box-shadow: 0px 10px 0px -9px rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .list_itm h3 {
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 1px;
+  }
+  .anim {
+    animation-name: men_ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .shade {
+    background-color: black;
+    z-index: 9998;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    animation: shd_ani_rev;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .left {
+    left: -100vw;
+  }
+  .shd_ani {
+    animation-name: shd_ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  a {
+    text-decoration: none;
+    color: #95989A;
+  }
+  .title {
+    text-align: center;
+  }
+  .title h1 {
+    font-weight: normal;
+  }
+  .selection h2 {
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 0px;
+  }
+  .selection {
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 50vw;
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 2px 0px 0px rgba(255,255,255,0.5);
+    box-shadow: 0px 2px 0px 0px rgba(255,255,255,0.5);
+  }
+  .bottom {
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(255,255,255,0);
+    -moz-box-shadow: 0px 2px 0px 0px rgba(255,255,255,0);
+    box-shadow: 0px 2px 0px 0px rgba(255,255,255,0);
+  }
+  .alignment {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @keyframes shd_ani {
+    0% {left: -100vw;}
+    1% {left: 0;}
+    100% {opacity: 0.5;}
+  }
+  @keyframes shd_ani_rev {
+    0% {left: 0;}
+    1% {left: -100vw;}
+    100% {opacity: 0.5;}
+  }
+  @keyframes men_ani {
+    0% {left: -280px;}
+    100% {left: 0;}
+  }
+  @keyframes men_ani_rev {
+    0% {left: -0px;}
+    100% {left: -280px;}
+  }
+  @keyframes ach_ani {
+    0% {bottom: -50vh; opacity: 0;}
+    1% {bottom: 45vh; opacity: 0;}
+    100% {opacity: 1;}
   }
 }
