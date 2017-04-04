@@ -5,11 +5,12 @@ function menu() {
 }
 function achievement() {
   document.querySelector(".achieve").classList.remove("display_n")
-    document.querySelector(".res_js").classList.remove("display_n")
+  document.querySelector(".res_js").classList.remove("display_n")
 }
 function removeAch() {
   document.querySelector(".achieve").classList.add("display_n")
   document.querySelector(".res_js").classList.add("display_n")
+  document.querySelector(".notif_menu").classList.remove("notif_ani")
 }
 function remMen() {
   document.querySelector(".menu").classList.remove("anim")
@@ -17,5 +18,6 @@ function remMen() {
   document.querySelector(".shade").classList.add("left")
 }
 function notification() {
-  document.querySelector("").classList.add("")
+  document.querySelector(".notif_menu").classList.add("notif_ani")
+  document.querySelector(".res_js").classList.remove("display_n")
 }
