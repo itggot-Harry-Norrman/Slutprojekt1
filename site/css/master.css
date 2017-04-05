@@ -56,10 +56,17 @@
   .circolor {
     background-color: #00898E;
     border-radius: 50%;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   }
   .fabsize {
     height: 60px;
     width: 60px;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   }
   .achieve {
     background-color: #161616;
@@ -280,6 +287,25 @@
     margin-left: 5px;
     margin-right: 5px;
   }
+  #myProgress {
+    width: 240px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+  #myBar {
+    width: 0%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(0, 137, 142, 0.3);
+  }
+
   @keyframes notif_ani {
     0% {right: -200px; top: 105px; opacity: 0;}
     1% {right: 30px; top: 105px;}

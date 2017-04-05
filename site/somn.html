@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startsida</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body onload="move()">
+    <div class="mainbox">
+      <div class="achieve display_n">
+        <h2>Nytt träningsmål:</h2>
+        <form>
+          <input type="text" name="träning" class="form">
+          </form>
+          <div class="button">
+            <h2>Sätt mål</h2>
+          </div>
+      </div>
+      <div class="menu">
+        <div class="men_header">
+          <h4>Test@mail.com</h4>
+          <h3>Person Person</h3>
+        </div>
+        <div class="men_list">
+          <div class="list_itm">
+            <a href="./index.html"><h3>Startsida</h3></a>
+          </div>
+          <div class="list_itm">
+            <a href="./ovn.html"><h3>Träning</h3></a>
+          </div>
+          <div class="list_itm">
+            <h3>Prestationer</h3>
+          </div>
+          <div class="list_itm">
+            <h3>Kost</h3>
+          </div>
+          <div class="list_itm">
+            <h3>Sömn</h3>
+          </div>
+          <div class="list_itm">
+            <h3>Träningschema</h3>
+          </div>
+        </div>
+      </div>
+      <div class="shade left" onclick="remMen()"></div>
+      <div class="notif_menu">
+        <div class="notif_bar">
+        <h4>Spring idag</h4>
+        <h4>12/03</h4>
+      </div>
+      <div class="notif_bar">
+        <h4>Gym idag</h4>
+        <h4>10/03</h4>
+      </div>
+      </div>
+      <div class="res_js display_n" onclick="removeAch()"></div>
+      <div class="overlay">
+        <div class="toplayer">
+        <div class="layer1">
+        <img src="./img/menu_white.svg" alt="menu" class="regico" onclick="menu()">
+        <div class="account">
+          <img src="./img/account_white.svg" alt="account" class="regico circolor">
+        </div>
+      </div>
+      <div class="layer2">
+        <img src="./img/notification_white.svg" alt="notification" class="regico circolor" onclick="notification()">
+      </div>
+    </div>
+      <div class="botlayer">
+      <div class="layer3">
+        <img src="./img/fab.png" alt="Floating action button" class="fabsize" onclick="achievement()">
+      </div>
+    </div>
+      </div>
+      <article class="title">
+        <h1>Sömn</h1>
+      </article>
+      <article class="maintext">
+        <div class="sleepdone">
+          <h2>Sleep Today</h2>
+        </div>
+        <div class="progressbar">
+      <div id="myProgress">
+        <div id="myBar">0h</div>
+      </div>
+    </div>
+  </article>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
