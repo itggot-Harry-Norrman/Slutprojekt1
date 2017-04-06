@@ -24,36 +24,34 @@ function notification() {
 function move() {
     var elem = document.getElementById("myBar");
     var width = 1;
-    var id = setInterval(frame, 50);
+    var id = setInterval(frame, 100);
     function frame() {
-        if (width >= 100) {
+        if (width >= 30) {
             clearInterval(id);
         } else {
             width++;
             elem.style.width = width + "%" ;
             var round = width * 0.09;
             var sleepLeft = 9 - round;
-            elem.innerHTML = sleepLeft + "h";
             elem.innerHTML = Math.ceil(round) + "h";
         }
     }
 
 }
-// function sleepSession() {
-//     var elem = document.getElementById("mySleep");
-//     var width = 1;
-//     var id = setInterval(frame, 50);
-//     function frame() {
-//         if (width >= 100) {
-//             clearInterval(id);
-//         } else {
-//             width++;
-//             elem.style.width = width + "%" ;
-//             var round = width * 0.09;
-//             var sleepLeft = 9 - round;
-//             elem.innerHTML = sleepLeft + "h";
-//             elem.innerHTML = Math.ceil(round) + "h";
-//         }
-//     }
-//
-// }
+function moveCur() {
+    var prank = document.getElementById("sleepSession");
+    var width = 1;
+    var id = setInterval(frame, 30);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            prank.style.width = width + "%" ;
+            var round = width * 1.8;
+            var sleepLeft = 9 - round;
+            prank.innerHTML = Math.ceil(round) + "m";
+        }
+    }
+
+}
