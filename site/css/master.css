@@ -245,7 +245,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 9998;
+    z-index: 9995;
   }
   .notif_menu {
     background-color: #E4E4E4;
@@ -289,13 +289,16 @@
   }
   #myProgress {
     width: 240px;
-    background-color: grey;
+    background-color: #161616;
     display: flex;
     flex-direction: row;
     height: 30px;
     text-align: center;
     line-height: 30px;
     color: white;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   }
   #myBar {
     width: 0%;
@@ -305,7 +308,16 @@
     color: white;
     background-color: rgba(0, 137, 142, 0.3);
   }
-
+  .sleepButton {
+    background-color: rgba(0, 137, 142, 0.5);
+    width: 75px;
+    text-align: center;
+    line-height: 0;
+    margin-top: 10px;
+  }
+  .sleepButton h3 {
+    font-weight: lighter;
+  }
   @keyframes notif_ani {
     0% {right: -200px; top: 105px; opacity: 0;}
     1% {right: 30px; top: 105px;}

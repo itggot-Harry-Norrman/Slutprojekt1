@@ -39,3 +39,21 @@ function move() {
     }
 
 }
+// function sleepSession() {
+//     var elem = document.getElementById("mySleep");
+//     var width = 1;
+//     var id = setInterval(frame, 50);
+//     function frame() {
+//         if (width >= 100) {
+//             clearInterval(id);
+//         } else {
+//             width++;
+//             elem.style.width = width + "%" ;
+//             var round = width * 0.09;
+//             var sleepLeft = 9 - round;
+//             elem.innerHTML = sleepLeft + "h";
+//             elem.innerHTML = Math.ceil(round) + "h";
+//         }
+//     }
+//
+// }

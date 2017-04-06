@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
-  <body onload="move()">
+  <body onload="">
     <div class="mainbox">
       <div class="achieve display_n">
         <h2>Nytt träningsmål:</h2>
@@ -78,14 +78,19 @@
         <h1>Sömn</h1>
       </article>
       <article class="maintext">
+        <section class="alignment">
         <div class="sleepdone">
-          <h2>Sleep Today</h2>
+          <h2>Sömn Idag</h2>
         </div>
         <div class="progressbar">
       <div id="myProgress">
         <div id="myBar">0h</div>
       </div>
     </div>
+    <div class="sleepButton" onclick="move()">
+      <h3>Sleep</h3>
+    </div>
+</section>
   </article>
     </div>
     <script src="./js/main.js"></script>
