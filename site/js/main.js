@@ -55,3 +55,10 @@ function moveCur() {
     }
 
 }
+function addGoal() {
+  document.querySelector(".achievecard").classList.remove("display_n")
+  var forminfo = document.querySelector(".form").value;
+  var goaldiv = document.querySelector(".goal");
+  var element = "<p>" + forminfo + "</p>"
+  goaldiv.innerHTML += element
+}
