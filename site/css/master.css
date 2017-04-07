@@ -370,15 +370,13 @@
   .sleepmargin {
     margin-top: 50px;
   }
-  .goal p {
-    line-height: 5px;
-  }
   .ovn {
     padding: 10px;
     background-color: #161616;
+    margin: 10px;
   }
   .size {
-    
+    width: 50px;
   }
   @keyframes notif_ani {
     0% {right: -200px; top: 105px; opacity: 0;}
